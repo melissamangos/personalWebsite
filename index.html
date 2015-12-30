@@ -12,6 +12,8 @@ Personal Website
 	<meta name="Melissa Mangos" content="Melissa's Personal Website">
 	<title>Melissa Mangos</title>
 
+	<script type="text/javascript" src="js/main.js"></script>
+
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/button.css">
@@ -20,27 +22,55 @@ Personal Website
 </head>
 <body>
 	<header>
-		<a href="#" class="btn red">About<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
-		<a href="#" class="btn green">Experience<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
-		<a href="#" class="btn yellow">Projects<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
-		<a href="#" class="btn blue">Contact<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
+		<a href="#" id="red" class="btn red" onclick="swapPage(this.id)">About<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
+		<a href="#" id="green" class="btn green" onclick="swapPage(this.id)">Experience<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
+		<a href="#" id="yellow" class="btn yellow" onclick="swapPage(this.id)">Projects<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
+		<a href="#" id="purple" class="btn blue" onclick="swapPage(this.id)">Contact<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
 	</header>
 	
 	<div id="colour">
 	</div>
 
-	<h1>Melissa Mangos</h1>
-	<p>Hi! I am a Software Developer currently studying Computer Science at Queen's University.</p>
-	<div id="logos">
-	<a href="mailto:mmangos32@gmail.com">
-		<img id="image" src="images/email.png">
-	</a>
-	<a href="https://ca.linkedin.com/in/melissamangos" target="blank">
-		<img id="image" src="images/linkedin.png">
-	</a>
-	<a href="https://github.com/melissamangos/" target="blank">
-		<img id="image" src="images/github.png">
-	</a>
+	<div id="about">
+		<h1>Melissa Mangos</h1>
+		<p>Hi! I am a Software Developer currently studying Computer Science at Queen's University.</p>
+		<div id="logos">
+			<a href="mailto:mmangos32@gmail.com">
+				<img id="image" src="images/email.png">
+			</a>
+			<a href="https://ca.linkedin.com/in/melissamangos" target="blank">
+				<img id="image" src="images/linkedin.png">
+			</a>
+			<a href="https://github.com/melissamangos/" target="blank">
+				<img id="image" src="images/github.png">
+			</a>
+		</div>
+	</div>
+
+	<div id="experience">
+		<h2>Software Design Student (SODE-P-BCH)</h2>
+		<h3>Queen's University | September 2013 - Present</h3>
+		<p>Currently in third year Computer Science specializing in Software Design.</p>
+		<h2>Mobile Ad Coordinator</h2>
+		<h3>Fuse Powered Inc. | May 2015 - Present</h3>
+		<p>Handles optimization and distribution of various ad campaigns in mobile apps.</p>
+		<h2>Project Manager</h2>
+		<h3>Queen's Code the Change | October 2014 - February 2015</h3>
+		<p>Managed a team of 8 students to create a website for an annual Queen's event.</p>
+		<h2>Quality Assurance Analyst</h2>
+		<h3>Fuse Powered Inc. | May 2014 - August 2014</h3>
+		<p>Implemeted an automated testing script to simulate user interactions with mobile apps.</p>
+	</div>
+
+	<div id="projects">
+		<h1>In Progress</h1>
+		<p>Sorry for the inconvenience but this page is currently being built.</p>
+	</div>
+
+	<div id="contact">
+		<h1>In Progress</h1>
+		<p>Sorry for the inconvenience but this page is currently being built.</p>
+	</div>
 	
 </div>
 </body>
