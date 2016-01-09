@@ -4,11 +4,17 @@
 var pages = {};
 var colour;
 var colourCodes = {};
+var descriptions = {
+	"clock":"Clock that parses Unix time into a hexidecimal colour code.",
+	"alarm":"Functional prototype of an alarm clock with design focused on intuitive user experience.",
+	"robogals":"Website for non-profit organization, created during annual Code Jam.",
+};
+
 
 window.onload = function() {
 	colour = document.getElementById("colour");
 	colourCodes["about"] = "#E8573F";
-	colourCodes["experience"] = "#37BC9B";
+	colourCodes["experience"] = "#48CFAD";
 	colourCodes["projects"] = "#F6BB42";
 	colourCodes["contact"] = "#967ADC";
 
@@ -17,14 +23,15 @@ window.onload = function() {
 	pages["projects"] = document.getElementById("projects");
 	pages["contact"] = document.getElementById("contact");
 
-	pages["about"].style.animation = "fade-in 1s 0.2s 1 forwards";
-
 	document.body.removeChild(pages["experience"]);
 	document.body.removeChild(pages["projects"]);
 	document.body.removeChild(pages["contact"]);
 };
 
+
 function swapPage(element) {
+	var list;
+	var i = 2;
 	var page = getCurrentPage();
 	document.body.style.backgroundColor = colourCodes[page];
 
@@ -34,9 +41,8 @@ function swapPage(element) {
 				colour.setAttribute("id", "tored");
 				document.body.removeChild(pages[page]);
 				document.body.appendChild(pages["about"]);
-				pages["about"].style.visibility = "hidden";
 				document.body.style.animation = "background-red 0.001s 1s 1 forwards";
-				pages["about"].style.animation = "fade-in 1s 1s 1 forwards";
+				document.body.style.webkitAnimation = "background-red 0.001s 1s 1 forwards";
 			}
 			break;
 		case "green":
@@ -44,9 +50,8 @@ function swapPage(element) {
 				colour.setAttribute("id", "togreen");
 				document.body.removeChild(pages[page]);
 				document.body.appendChild(pages["experience"]);
-				pages["experience"].style.visibility = "hidden";
 				document.body.style.animation = "background-green 0.001s 1s 1 forwards";
-				pages["experience"].style.animation = "fade-in 0.5s 2s 1 forwards";
+				document.body.style.webkitAnimation = "background-green 0.001s 1s 1 forwards";
 			}
 			break;
 		case "yellow":
@@ -54,10 +59,8 @@ function swapPage(element) {
 				colour.setAttribute("id", "toyellow");
 				document.body.removeChild(pages[page]);
 				document.body.appendChild(pages["projects"]);
-				pages["projects"].style.visibility = "hidden";
 				document.body.style.animation = "background-yellow 0.001s 1s 1 forwards";
-				pages["projects"].style.animation = "fade-in 1s 2s 1 forwards";
-
+				document.body.style.webkitAnimation = "background-yellow 0.001s 1s 1 forwards";
 			}
 			break;
 		case "purple":
@@ -65,9 +68,8 @@ function swapPage(element) {
 				colour.setAttribute("id", "topurple");
 				document.body.removeChild(pages[page]);
 				document.body.appendChild(pages["contact"]);
-				pages["contact"].style.visibility = "hidden";
 				document.body.style.animation = "background-purple 0.001s 1s 1 forwards";
-				pages["contact"].style.animation = "fade-in 1s 2s 1 forwards";
+				document.body.style.webkitAnimation = "background-purple 0.001s 1s 1 forwards";
 			}
 			break;
 	}
@@ -77,3 +79,14 @@ function getCurrentPage() {
 	var elem = document.body.lastElementChild.id;
 	return elem;
 };
+
+function showDescription(element) {;
+	var para = document.createElement("P");
+	var p = document.createTextNode(descriptions[element.id]);
+	para.appendChild(p);
+	element.appendChild(para);
+};
+
+function removeDescription(element) {
+	element.removeChild(element.lastElementChild);
+}
