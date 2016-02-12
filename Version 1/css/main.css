@@ -1,0 +1,887 @@
+/* -------------------- FONTS -------------------- */
+@font-face {
+    font-family: 'Oswald';
+    src: url(../fonts/Oswald-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans-CondLight.ttf);
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+/* ---------------- GENERAL TAGS ---------------- */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #E8573F;
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    padding: 1em;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5em;
+    text-align: center;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+
+}
+
+h2 {
+    padding-top: 0.5em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#about h1, #contact h1 {
+    padding-top: 1em;
+}
+
+#about p, #contact p {
+    width: 42%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#experience, #projects, #contact, #about {
+    visibility: hidden;
+}
+
+/* ------------------ ABOUT TAB ------------------ */
+
+#logos {
+    width:100%;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+}
+
+#logos img {
+    opacity: 0.4;
+    width: 50px;
+    height: 50px;
+    margin: 1em;
+}
+
+#download {
+    width: 175px;
+    margin: auto;
+    opacity: 0.4;
+    padding: 0.5em;
+    border: 5px solid black;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+
+#download a img {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+}
+
+#logos a img:hover, #download:hover {
+    opacity: 0.8;
+}
+
+/* --------------- EXPERIENCE TAB --------------- */
+
+#experience {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.exp {
+    font-size: 1.6em;
+    padding: 0.8em;
+    background-color: #37BC9B;
+    width: 96%;
+}
+
+/* ---------------- PROJECTS TAB ---------------- */
+
+#projects p {
+    font-size: 1.2em;
+    color: white;
+    padding: 0.5em;
+    padding-top: 0.5em;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    vertical-align: top;
+    height: 50px;
+    margin-top: 0px;
+    padding-top: 25px;
+}
+
+#listed-projects {
+    width: 85%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+#listed-projects a {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    height: 250px;
+    margin: 2em;
+}
+
+#clock {
+    background-image: url("../images/clock.png");
+    border: 4px solid #E8573F;
+    border-radius: 5px;
+}
+
+#clock:hover {
+    background-image: none;
+    background-color: #E8573F;
+    border: 4px solid #E8573F;
+    border-radius: 5px;
+}
+
+#clock .title {
+    background-color: #E8573F;
+}
+
+#alarm {
+    background-image: url("../images/wake_me_up.png");
+    border: 4px solid #48CFAD;
+    border-radius: 5px;
+}
+
+#alarm:hover {
+    background-image: none;
+    background-color: #48CFAD;
+    border: 4px solid #48CFAD;
+    border-radius: 5px;
+}
+
+#alarm .title {
+    background-color: #48CFAD;
+}
+
+#robogals {
+    background-image: url("../images/robogals_logo.png");
+    border: 4px solid #967ADC;
+    border-radius: 5px;
+}
+
+#robogals:hover {
+    background-image: none;
+    background-color: #967ADC;
+    border: 4px solid #967ADC;
+    border-radius: 5px;
+}
+
+#robogals .title {
+    background-color: #967ADC;
+}
+
+/* -------------- ANIMATION PROMTS -------------- */
+
+#tored {
+    animation: to-red 1.8s 0s 1 forwards;
+    -ms-animation: to-red 1.8s 0s 1 forwards;
+    -moz-animation: to-red 1.8s 0s 1 forwards;
+    -webkit-animation: to-red 1.8s 0s 1 forwards;
+}
+
+#togreen {
+    animation: to-green 1.8s 0s 1 forwards;
+    -ms-animation: to-green 1.8s 0s 1 forwards;
+    -moz-animation: to-green 1.8s 0s 1 forwards;
+    -webkit-animation: to-green 1.8s 0s 1 forwards;
+}
+
+#toyellow {
+    animation: to-yellow 1.8s 0s 1 forwards;
+    -ms-animation: to-yellow 1.8s 0s 1 forwards;
+    -moz-animation: to-yellow 1.8s 0s 1 forwards;
+    -webkit-animation: to-yellow 1.8s 0s 1 forwards;
+}
+
+#topurple {
+    animation: to-purple 1.8s 0s 1 forwards;
+    -ms-animation: to-purple 1.8s 0s 1 forwards;
+    -moz-animation: to-purple 1.8s 0s 1 forwards;
+    -webkit-animation: to-purple 1.8s 0s 1 forwards;
+}
+
+#about {
+    animation: zoom-in 1s 1.6s 1 forwards;
+    -ms-animation: zoom-in 1s 1.6s 1 forwards;
+    -moz-animation: zoom-in 1s 1.6s 1 forwards;
+    -webkit-animation: zoom-in 1s 1.6s 1 forwards;
+}
+
+#experience div:nth-child(1) {
+    animation: right-in 2s 2s 1 forwards;
+    -ms-animation: right-in 2s 2s 1 forwards;
+    -moz-animation: right-in 2s 2s 1 forwards;
+    -webkit-animation: right-in 2s 2s 1 forwards;
+}
+
+#experience div:nth-child(2) {
+    animation: right-in 2s 2.5s 1 forwards;
+    -ms-animation: right-in 2s 2.5s 1 forwards;
+    -moz-animation: right-in 2s 2.5s 1 forwards;
+    -webkit-animation: right-in 2s 2.5s 1 forwards;
+}
+
+#experience div:nth-child(3) {
+    animation: right-in 2s 3s 1 forwards;
+    -ms-animation: right-in 2s 3s 1 forwards;
+    -moz-animation: right-in 2s 3s 1 forwards;
+    -webkit-animation: right-in 2s 3s 1 forwards;
+}
+
+#experience div:nth-child(4) {
+    animation: right-in 2s 3.5s 1 forwards;
+    -ms-animation: right-in 2s 3.5s 1 forwards;
+    -moz-animation: right-in 2s 3.5s 1 forwards;
+    -webkit-animation: right-in 2s 3.5s 1 forwards;
+}
+
+#experience div:nth-child(5) {
+    animation: right-in 2s 4s 1 forwards;
+    -ms-animation: right-in 2s 4s 1 forwards;
+    -moz-animation: right-in 2s 4s 1 forwards;
+    -webkit-animation: right-in 2s 4s 1 forwards;
+}
+
+#experience div:nth-child(6) {
+    animation: right-in 2s 4.5s 1 forwards;
+    -ms-animation: right-in 2s 4.5s 1 forwards;
+    -moz-animation: right-in 2s 4.5s 1 forwards;
+    -webkit-animation: right-in 2s 4.5s 1 forwards;
+}
+
+#projects h1 {
+    animation: fade-in 0.8s 1.8s 1 forwards;
+    -ms-animation: fade-in 0.8s 1.8s 1 forwards;
+    -moz-animation: fade-in 0.8s 1.8s 1 forwards;
+    -webkit-animation: fade-in 0.8s 1.8s 1 forwards;
+}
+
+#projects #listed-projects a:nth-child(1) {
+    animation: bottom-in 2s 2s 1 forwards;
+    -ms-animation: bottom-in 2s 2s 1 forwards;
+    -moz-animation: bottom-in 2s 2s 1 forwards;
+    -webkit-animation: bottom-in 2s 2s 1 forwards;
+}
+
+#projects #listed-projects a:nth-child(2) {
+    animation: bottom-in 2s 2.5s 1 forwards;
+    -ms-animation: bottom-in 2s 2.5s 1 forwards;
+    -moz-animation: bottom-in 2s 2.5s 1 forwards;
+    -webkit-animation: bottom-in 2s 2.5s 1 forwards;
+}
+
+#projects #listed-projects a:nth-child(3) {
+    animation: bottom-in 2s 3s 1 forwards;
+    -ms-animation: bottom-in 2s 3s 1 forwards;
+    -moz-animation: bottom-in 2s 3s 1 forwards;
+    -webkit-animation: bottom-in 2s 3s 1 forwards;
+}
+
+#contact {
+    animation: zoom-in 1s 2s 1 forwards;
+    -ms-animation: zoom-in 1s 2s 1 forwards;
+    -moz-animation: zoom-in 1s 2s 1 forwards;
+    -webkit-animation: zoom-in 1s 2s 1 forwards;
+}
+
+/* ----------------- ANIMATIONS ----------------- */
+
+/* User selected About */
+
+@-webkit-keyframes to-red {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #E8573F;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #E8573F;
+    }
+}
+
+@-moz-keyframes to-red {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #E8573F;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #E8573F;
+    }
+}
+
+@-ms-keyframes to-red {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #E8573F;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #E8573F;
+    }
+}
+
+@keyframes to-red {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #E8573F;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #E8573F;
+    }
+}
+
+@-webkit-keyframes background-red {
+    100% { 
+        background-color: #E8573F;
+    }
+}
+
+@-moz-keyframes background-red {
+    100% { 
+        background-color: #E8573F;
+    }
+}
+
+@-ms-keyframes background-red {
+    100% { 
+        background-color: #E8573F;
+    }
+}
+
+@keyframes background-red {
+    100% { 
+        background-color: #E8573F;
+    }
+}
+
+
+/* User selected Experience */
+
+@-webkit-keyframes to-green {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #48CFAD;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #48CFAD;
+    }
+}
+
+@-moz-keyframes to-green {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #48CFAD;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #48CFAD;
+    }
+}
+
+@-ms-keyframes to-green {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #48CFAD;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #48CFAD;
+    }
+}
+
+@keyframes to-green {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #48CFAD;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #48CFAD;
+    }
+}
+
+@-webkit-keyframes background-green {
+    100% { 
+        background: #48CFAD;
+    }
+}
+
+@-moz-keyframes background-green {
+    100% { 
+        background: #48CFAD;
+    }
+}
+
+@-ms-keyframes background-green {
+    100% { 
+        background: #48CFAD;
+    }
+}
+
+@keyframes background-green {
+    100% { 
+        background-color: #48CFAD;
+    }
+}
+
+/* User selected Projects */
+
+@-webkit-keyframes to-yellow {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #F6BB42;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #F6BB42;
+    }
+}
+
+@-moz-keyframes to-yellow {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #F6BB42;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #F6BB42;
+    }
+}
+
+@-ms-keyframes to-yellow {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #F6BB42;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #F6BB42;
+    }
+}
+
+@keyframes to-yellow {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #F6BB42;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #F6BB42;
+    }
+}
+
+@-webkit-keyframes background-yellow {
+    100% { 
+        background-color: #F6BB42;
+    }
+}
+
+@-moz-keyframes background-yellow {
+    100% { 
+        background-color: #F6BB42;
+    }
+}
+
+@-ms-keyframes background-yellow {
+    100% { 
+        background-color: #F6BB42;
+    }
+}
+
+@keyframes background-yellow {
+    100% { 
+        background-color: #F6BB42;
+    }
+}
+
+/* User selected Contact */
+
+@-webkit-keyframes to-purple {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #967ADC;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #967ADC;
+    }
+}
+
+@-moz-keyframes to-purple {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #967ADC;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #967ADC;
+    }
+}
+
+@-ms-keyframes to-purple {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #967ADC;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #967ADC;
+    }
+}
+
+@keyframes to-purple {
+    0%, 100% {
+        height: 0px;
+        top: 0px;
+        background-color: #967ADC;
+    }
+    99% {  
+        height: 100vh;
+        background-color: #967ADC;
+    }
+}
+
+@-webkit-keyframes background-purple {
+    100% { 
+        background-color: #967ADC;
+    }
+}
+
+@-moz-keyframes background-purple {
+    100% { 
+        background-color: #967ADC;
+    }
+}
+
+@-ms-keyframes background-purple {
+    100% { 
+        background-color: #967ADC;
+    }
+}
+
+
+@keyframes background-purple {
+    100% { 
+        background-color: #967ADC;
+    }
+}
+
+/* Text fades in with slight zoom */
+
+@-webkit-keyframes zoom-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform:scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform:scale(1);
+        visibility: visible;
+    }
+}
+
+@-moz-keyframes zoom-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform:scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform:scale(1);
+        visibility: visible;
+    }
+}
+
+@-ms-keyframes zoom-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform:scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform:scale(1);
+        visibility: visible;
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform:scale(0.5);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform:scale(1);
+    }
+}
+
+/* Animation where text fades in */
+
+@-webkit-keyframes fade-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@-ms-keyframes fade-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+@keyframes fade-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* Fade in from side */
+
+@-webkit-keyframes right-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -webkit-transform: translateX(100px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+    }
+}
+
+@-moz-keyframes right-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -webkit-transform: translateX(100px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+    }
+}
+
+@-ms-keyframes right-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -webkit-transform: translateX(100px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+    }
+}
+
+@keyframes right-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -webkit-transform: translateX(100px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+    }
+}
+
+/* Fade in from bottom */
+
+@-webkit-keyframes bottom-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@-moz-keyframes bottom-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@-ms-keyframes bottom-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@keyframes bottom-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+    }
+}

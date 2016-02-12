@@ -1,7 +1,7 @@
 <!-- 
 Melissa Mangos 
 
-Personal Website
+Personal Website Version 2
 -->
 <!DOCTYPE html>
 <html>
@@ -12,99 +12,51 @@ Personal Website
 	<meta name="Melissa Mangos" content="Melissa's Personal Website">
 	<title>Melissa Mangos</title>
 
-	<script type="text/javascript" src="js/main.js"></script>
-
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/button.css">
+    <link href="css/main.css" type="text/css" rel="stylesheet"/>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
 </head>
 <body>
-	<header>
-		<a href="#" id="red" class="btn red" onclick="swapPage(this.id)">About<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
-		<a href="#" id="green" class="btn green" onclick="swapPage(this.id)">Experience<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
-		<a href="#" id="yellow" class="btn yellow" onclick="swapPage(this.id)">Projects<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
-		<a href="#" id="purple" class="btn blue" onclick="swapPage(this.id)">Contact<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
-	</header>
-	
-	<div id="colour">
-	</div>
-
-	<div id="about">
-		<h1>Melissa Mangos</h1>
-		<p>Hi! I am a Software Developer currently studying Computer Science at Queen's University.</p>
-		<div id="logos">
-			<a onclick="swapPage('purple')">
-				<img src="images/email.png">
-			</a>
-			<a href="https://ca.linkedin.com/in/melissamangos" target="blank">
-				<img src="images/linkedin.png">
-			</a>
-			<a href="https://github.com/melissamangos/" target="blank">
-				<img src="images/github.png">
-			</a>
+	<div id="opening">
+		<div id="name">
+			<div>M</div><div>e</div><div>l</div><div>i</div><div>s</div><div>s</div><div>a</div> <div>M</div><div>a</div><div>n</div><div>g</div><div>o</div><div>s</div>
 		</div>
-		<div id="download">
-			<a href="https://www.dropbox.com/s/aofnm8ukfcoj4br/MelissaMangosResumeDec2015.pdf?dl=0" target="blank">
-				<img src="images/download.png">
-				DOWNLOAD RESUME
-			</a>
-		</div>
-		
-	</div>
-
-	<div id="experience">
-		<div><h2 class="exp">Education</h2></div>
-		<div>
-			<h2>Software Design Student (SODE-P-BCH)</h2>
-			<h3>Queen's University | September 2013 - Present</h3>
-			<p>Currently in third year Computer Science specializing in Software Design.</p>
-		</div>
-		<div><h2 class="exp">Work Experience</h2></div>
-		<div>
-			<h2>Mobile Ad Coordinator</h2>
-			<h3>Fuse Powered Inc. | May 2015 - Present</h3>
-			<p>Handles optimization and distribution of various ad campaigns in mobile apps.</p>
-		</div>
-		<div>
-			<h2>Project Manager</h2>
-			<h3>Queen's Code the Change | October 2014 - February 2015</h3>
-			<p>Managed a team of 8 students to create a website for an annual Queen's event.</p>
-		</div>
-		<div>
-			<h2>Quality Assurance Analyst</h2>
-			<h3>Fuse Powered Inc. | May 2014 - August 2014</h3>
-			<p>Implemeted an automated testing script to simulate user interactions with mobile apps.</p>
-		</div>
-	</div>
-
-	<div id="projects">	
-		<h1>Projects</h1>
-		<div id="listed-projects">
-			<a id="clock" href="http://melissamangos.com/colourclock/" target="blank" onmouseenter="showDescription(this);" onmouseleave="removeDescription(this);">
-				<div class="title">COLOUR CLOCK</div>
-			</a>
-			<a id="alarm" href="https://melissamangos.proto.io/share/?id=7da0f6ae-0f19-463e-af5f-50b41e781812&v=4" target="blank" onmouseenter="showDescription(this);" onmouseleave="removeDescription(this);">
-				<div class="title">WAKE ME UP</div>
-			</a>
-			<a id="robogals" href="https://github.com/CodeTheChange-Robogals/robogalsWebsite-Final" target="blank" onmouseenter="showDescription(this);" onmouseleave="removeDescription(this);">
-				<div class="title">ROBOGALS QUEEN'S</div>
-			</a>
-		</div>
-	</div>
-
-	<div id="contact">
-		<h1>Talk to Me</h1>
-		<p>For any inquiries, feel free to send me an email at:<br>mmangos32@gmail.com</p>
-		<div id="logos">
-			<a href="https://ca.linkedin.com/in/melissamangos" target="blank">
-				<img src="images/linkedin.png">
-			</a>
-			<a href="https://github.com/melissamangos/" target="blank">
-				<img src="images/github.png">
-			</a>
-		</div>
-	</div>
-	
-</div>
+	    <div id="bar">
+	    </div>
+	    <img id="arrow" src="images/arrow.gif">
+    <div>
+    <div id="about">
+    	<img id="hello" src="images/hello2.gif">
+    	<p>
+    		My name is Melissa and I am a Software Design student at Queen's University.<br><br>I love programming, aesthetically pleasing things, video games &amp; coffee.
+    	</p>
+    	<img id="character" src="images/May.png">
+    	<a href="https://www.dropbox.com/s/wf11izq2fvnyq5g/MelissaMangosResumeJan2016.pdf?dl=0" target="blank"><h2>Download Resume</h2></a>
+    </div>
+    <div id="work">
+    	<h1><span>Work</span></h1>
+    	<div>
+    		<a href="http://melissamangos.com/colourclock/" target="blank"><h2>Colour Clock</h2></a>
+    		<p>
+    		A clock that displays the current Unix time as a hexadecimal colour code.
+    		</p>
+    	</div>
+    	<div>
+    		<a href="https://melissamangos.proto.io/share/?id=7da0f6ae-0f19-463e-af5f-50b41e781812&v=4" target="blank"><h2>Wake Me Up</h2></a>
+			<p>
+    		Functional prototype of an alarm clock with design focused on intuitive user experience.
+			</p>
+    	</div>
+    	<div>
+    		<a href="https://github.com/CodeTheChange-Robogals/robogalsWebsite-Final" target="blank"><h2>Robogals Queen's</h2></a>
+			<p>
+    		Website for non-profit organization Robogals, created during the annual Code Jam.
+			</p>
+    	</div>
+    </div>
+    <div id="contact">
+    	<a href="mailto:mmangos32@gmail.com"><img src="images/email.png"><span>mmangos32@gmail.com</span></a><br><br>
+    	<a href="https://github.com/melissamangos/" target="blank"><img src="images/github.png"><span>github.com/melissamangos</span></a><br><br>
+    	<a href="https://ca.linkedin.com/in/melissamangos" target="blank"><img src="images/linkedin.png"><span>linkedin.com/in/melissamangos</span></a>
+    </div>
 </body>
 </html>

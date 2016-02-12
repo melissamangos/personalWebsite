@@ -1,0 +1,110 @@
+<!-- 
+Melissa Mangos 
+
+Personal Website
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Melissa Mangos" content="Melissa's Personal Website">
+	<title>Melissa Mangos</title>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+</head>
+<body>
+	<header>
+		<a href="#" id="red" class="btn red" onclick="swapPage(this.id)">About<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
+		<a href="#" id="green" class="btn green" onclick="swapPage(this.id)">Experience<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
+		<a href="#" id="yellow" class="btn yellow" onclick="swapPage(this.id)">Projects<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
+		<a href="#" id="purple" class="btn blue" onclick="swapPage(this.id)">Contact<div class="hover"><span></span><span></span><span></span><span></span><span></span></div></a>
+	</header>
+	
+	<div id="colour">
+	</div>
+
+	<div id="about">
+		<h1>Melissa Mangos</h1>
+		<p>Hi! I am a Software Developer currently studying Computer Science at Queen's University.</p>
+		<div id="logos">
+			<a onclick="swapPage('purple')">
+				<img src="images/email.png">
+			</a>
+			<a href="https://ca.linkedin.com/in/melissamangos" target="blank">
+				<img src="images/linkedin.png">
+			</a>
+			<a href="https://github.com/melissamangos/" target="blank">
+				<img src="images/github.png">
+			</a>
+		</div>
+		<div id="download">
+			<a href="https://www.dropbox.com/s/aofnm8ukfcoj4br/MelissaMangosResumeDec2015.pdf?dl=0" target="blank">
+				<img src="images/download.png">
+				DOWNLOAD RESUME
+			</a>
+		</div>
+		
+	</div>
+
+	<div id="experience">
+		<div><h2 class="exp">Education</h2></div>
+		<div>
+			<h2>Software Design Student (SODE-P-BCH)</h2>
+			<h3>Queen's University | September 2013 - Present</h3>
+			<p>Currently in third year Computer Science specializing in Software Design.</p>
+		</div>
+		<div><h2 class="exp">Work Experience</h2></div>
+		<div>
+			<h2>Mobile Ad Coordinator</h2>
+			<h3>Fuse Powered Inc. | May 2015 - Present</h3>
+			<p>Handles optimization and distribution of various ad campaigns in mobile apps.</p>
+		</div>
+		<div>
+			<h2>Project Manager</h2>
+			<h3>Queen's Code the Change | October 2014 - February 2015</h3>
+			<p>Managed a team of 8 students to create a website for an annual Queen's event.</p>
+		</div>
+		<div>
+			<h2>Quality Assurance Analyst</h2>
+			<h3>Fuse Powered Inc. | May 2014 - August 2014</h3>
+			<p>Implemeted an automated testing script to simulate user interactions with mobile apps.</p>
+		</div>
+	</div>
+
+	<div id="projects">	
+		<h1>Projects</h1>
+		<div id="listed-projects">
+			<a id="clock" href="http://melissamangos.com/colourclock/" target="blank" onmouseenter="showDescription(this);" onmouseleave="removeDescription(this);">
+				<div class="title">COLOUR CLOCK</div>
+			</a>
+			<a id="alarm" href="https://melissamangos.proto.io/share/?id=7da0f6ae-0f19-463e-af5f-50b41e781812&v=4" target="blank" onmouseenter="showDescription(this);" onmouseleave="removeDescription(this);">
+				<div class="title">WAKE ME UP</div>
+			</a>
+			<a id="robogals" href="https://github.com/CodeTheChange-Robogals/robogalsWebsite-Final" target="blank" onmouseenter="showDescription(this);" onmouseleave="removeDescription(this);">
+				<div class="title">ROBOGALS QUEEN'S</div>
+			</a>
+		</div>
+	</div>
+
+	<div id="contact">
+		<h1>Talk to Me</h1>
+		<p>For any inquiries, feel free to send me an email at:<br>mmangos32@gmail.com</p>
+		<div id="logos">
+			<a href="https://ca.linkedin.com/in/melissamangos" target="blank">
+				<img src="images/linkedin.png">
+			</a>
+			<a href="https://github.com/melissamangos/" target="blank">
+				<img src="images/github.png">
+			</a>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>
