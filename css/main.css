@@ -8,7 +8,6 @@
 
 body {
     margin: 0;
-    font-size: 16px;
     font-family: Emulator, 'Courier New';
     text-align: center;
     color: #555555;
@@ -21,6 +20,7 @@ p {
     padding: 1em;
     line-height: 1.5em;
     letter-spacing: 1px;
+    font-size: 12px;
 }
 
 h1, #name {
@@ -41,10 +41,11 @@ h1 {
 a {
     text-decoration: none;
     color: #555555;
+    font-size: 12px;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0.5em;
     text-align: center;
     box-shadow: 4px 0 #FFFFFF, -4px 0 #FFFFFF, 0 -4px #FFFFFF, 0 4px #FFFFFF, 8px 0 #555555, -8px 0 #555555, 0 -8px #555555, 0 8px #555555, 0 0 0 4px #555555;
@@ -101,6 +102,7 @@ h2:hover {
 }
 
 #about h2 {
+    font-size: 1em;
     width: 45%;
     margin: 0 auto;
     margin-top: 1em;
@@ -116,7 +118,7 @@ p, #character {
 
 #work {
     position: relative;
-    top: 90vh;
+    top: 95vh;
     width: 95vw;
     margin: 0 auto;
     text-align: left;
@@ -134,7 +136,7 @@ p, #character {
 
 #contact {
     position: relative;
-    top: 90vh;
+    top: 95vh;
     margin: 0 auto;
     background-color: #bbab77;
     text-align: left;
@@ -465,5 +467,75 @@ img + span {
     }
     100% {
         opacity: 1;
+    }
+}
+
+/* ------- MEDIA QUERIES ------- */
+/* Screen sizes >= 960px */
+@media all and (min-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+
+}
+
+@media all  and (min-width: 650px) and (max-width: 899px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+/* Screen sizes < 515px */
+@media all and (min-width: 550px) and (max-width: 649px) {
+    body {
+        font-size: 10px;
+    }
+
+    #hello {
+        width: 70%;
+    }
+
+    #work div {
+        display: block;
+        margin: 3em;
+        width: 80%;
+    }
+}
+
+@media all and (min-width: 450px) and (max-width: 549px) {
+    body {
+        font-size: 8px;
+    }
+
+    #hello {
+        width: 70%;
+    }
+
+    #work div {
+        display: block;
+        margin: 3em;
+        width: 80%;
+    }
+}
+
+
+@media all and (max-width: 449px) {
+    body {
+        font-size: 6px;
+    }
+
+    #hello {
+        width: 70%;
+    }
+
+    #character {
+        width: 100px;
+        margin-bottom: 2em;
+    }
+
+    #work div {
+        display: block;
+        margin: 3em;
+        width: 80%;
     }
 }
